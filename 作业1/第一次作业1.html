@@ -5,6 +5,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        .main{
+            background-color: azure;
+        }
+        table{
+            width: auto;
+        }
+        img.picture{
+            margin-left: 4px;
+        }
+        .debt{
+            margin-left: 5em;
+        }
+        .sign{
+            margin-left: 25em;
+        }
+        .date{
+            margin-left: 7em;
+        }
+    </style>
 </head>
 
 <body>
@@ -14,52 +34,54 @@
         </caption>
 
         <div id="baseInformation">
-            <tr>
+            <tr class="main">
                 <td colspan="7">基本信息</td>
             </tr>
-            <tr style="text-align: center;">
+            <tr>
                 <td>姓名</td>
-                <td>陈爽</td>
+                <td>马云</td>
                 <td>性别</td>
-                <td>女</td>
+                <td>男</td>
                 <td>出生日期</td>
-                <td>1998/12/9</td>
-                <td rowspan="5"><img src="QQ图片20230905091838.jpg" width="80" alt=""></td>
+                <td>1988/12/9</td>
+                <td rowspan="5">
+                    <img src="./my.jpg" width="100px" class="picture">
+                </td>
             </tr>
 
-            <tr style="text-align: center;">
+            <tr>
                 <td>政治面貌</td>
-                <td>少先队员</td>
+                <td>中共党员</td>
                 <td>籍贯</td>
-                <td>日本北海道</td>
+                <td>中国</td>
                 <td>民族</td>
-                <td>大和族</td>
+                <td>汉族</td>
             </tr>
 
-            <tr style="text-align: center;">
+            <tr>
                 <td>婚姻状况</td>
-                <td>未婚</td>
+                <td>已婚</td>
                 <td>学历</td>
-                <td>大专</td>
+                <td>大学</td>
                 <td>专业</td>
-                <td>垃圾回收</td>
+                <td>英语</td>
             </tr>
 
-            <tr style="text-align: center;">
+            <tr>
                 <td>联系电话</td>
                 <td colspan="2">2132187</td>
                 <td>邮箱</td>
                 <td colspan="2">8888@outlook.com</td>
             </tr>
 
-            <tr style="text-align: center;">
-                <td>身法证好</td>
+            <tr>
+                <td>身法证号</td>
                 <td colspan="2">421120000000</td>
                 <td>通讯地址</td>
-                <td colspan="2">北海道泷上町道の駅 香りの里・たきのうえ</td>
+                <td colspan="2">浙江省杭州市</td>
             </tr>
 
-            <tr style="text-align: center;">
+            <tr>
                 <td rowspan="2">相关证书</td>
                 <td colspan="2">获取时间</td>
                 <td colspan="3">证书名称</td>
@@ -75,7 +97,7 @@
         </div>
 
         <div id="educationExperience">
-            <tr>
+            <tr class="main">
                 <td colspan="7">教育经历</td>
             </tr>
 
@@ -88,14 +110,14 @@
 
             <tr style="text-align:center;">
                 <td colspan="2">20xx.xx.xx-20xx.xx.xx</td>
-                <td colspan="2">武汉科技大学</td>
-                <td colspan="2">大专/垃圾回收</td>
+                <td colspan="2">杭州师范学院</td>
+                <td colspan="2">大学/英语</td>
                 <td colspan="2">张老师</td>
             </tr>
         </div>
 
         <div id="workExperience">
-            <tr>
+            <tr class="main">
                 <td colspan="7">工作经历</td>
             </tr>
 
@@ -131,7 +153,7 @@
         </div>
 
         <div id="familyInformation">
-            <tr>
+            <tr class="main">
                 <td colspan="7">家庭信息</td>
             </tr>
 
@@ -167,7 +189,7 @@
         </div>
 
         <div id="employmentSituation">
-            <tr>
+            <tr class="main">
                 <td colspan="7">录用情况</td>
             </tr>
 
@@ -201,35 +223,30 @@
     </table>
 
     <div id="footer">
-        <form action="URL" target="_blank" method="get">
-            是否因违法犯罪受过处理：
-            <label for="">
-                <input type="radio" name="crime" id="crime" value="yes">是
-                <input type="radio" name="crime" id="crime" value="no">否
-            </label>
-        </form>
-        <form action="URL" target="_blank" method="get">
-            是否有数额过万的未清偿债务
-            <label for="">
-                <input type="radio" name="crime" id="crime" value="yes">是
-                <input type="radio" name="crime" id="crime" value="no">否
-            </label>
-        </form>
+        <form action="URL" target="_blank" method="get" name="yesORno">
 
+            是否因违法犯罪受过处理：
+            <label>
+                <input type="radio" name="crime" value="yes">是
+            </label>
+            <label>
+                <input type="radio" name="crime" value="no">否
+            </label>
+
+            <span class="debt">是否有数额过万的未清偿债务</span>
+            <label>
+                <input type="radio" name="debt" value="yes">是
+            </label>
+            <label>
+                <input type="radio" name="debt" value="no">否
+            </label>
+        </form>
         <p>本人承诺以上信息均为真实有效，如若造假或情况不实，自愿承担一切后果。</p>
-        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            本人签名：
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            日期：</p>
+        <p>
+            <span class="sign">本人签名：</span>
+            <span class="date">日期：</span>
+        </p>
+        
     </div>
 </body>
 
